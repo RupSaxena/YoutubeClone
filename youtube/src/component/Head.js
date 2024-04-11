@@ -1,4 +1,4 @@
-import { togglemenu } from "../Appslice";
+import { togglemenu } from "../utils/Appslice";
 import {useDispatch} from 'react-redux';
 const Head=()=>{
     const dispatch=useDispatch();

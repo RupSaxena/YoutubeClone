@@ -3,28 +3,28 @@ const Sidebar=()=>{
     const ismenuopen=useSelector((store)=>store.app.ismenuopen);
     if(!ismenuopen) return null;
     return (
-        <div className="shadow-lg">
+        <div className="shadow-lg px-6">
 
-            <ul>
-                <li>Home</li>
+            <ul className="hover:first:bg-gray-300">
+                <li >Home</li>
             <li>Shorts</li>
             <li>Subscriptions</li>
             </ul>
-            <h1 className="font-bold">You</h1>
+            <h1 className="font-bold mt-3">You</h1>
             <ul>
                 <li>Your Channel</li>
             <li>History</li>
             <li>Live videos</li>
             <li>Liked Videos</li>
             </ul>
-            <h1 className="font-bold">Watch later</h1>
+            <h1 className="font-bold mt-3">Watch later</h1>
             <ul>
                 <li>Music</li>
             <li>Sports</li>
             <li>Gaming</li>
             <li>Movies</li>
             </ul>
-            <h1 className="font-bold"> Explore</h1>
+            <h1 className="font-bold mt-3"> Explore</h1>
             <ul>
                 <li>Trending</li>
             <li>Shopping</li>
