@@ -39,8 +39,8 @@ dispatch(
 return (
 <div className="grid grid-flow-col p-5 m-2 shadow-lg">
     <div className="flex col-span-1">
- <img onClick={()=>handlemenu()}className="cursor-pointer h-8"alt="icon" src="https://cdn.iconscout.com/icon/free/png-256/free-hamburger-menu-462145.png?f=webp"width="70px" />
-<a href="/"><img className="h-10 mx-2"alt="youtube" src="https://t3.ftcdn.net/jpg/06/34/31/96/360_F_634319630_txtgmPLEEQ8o4zaxec2WKrLWUBqdBBQn.jpg" width="150px"/></a>
+ <img onClick={()=>handlemenu()}className="cursor-pointer h-8 mt-4"alt="icon" src="https://cdn.iconscout.com/icon/free/png-256/free-hamburger-menu-462145.png?f=webp"width="60px" />
+<a href="/"><img className="h-16 mx-1"alt="youtube" src="https://t3.ftcdn.net/jpg/06/34/31/96/360_F_634319630_txtgmPLEEQ8o4zaxec2WKrLWUBqdBBQn.jpg" width="130px"/></a>
 </div>
 <div className="col-span-10 px-10">
     <div>   <input className="border border-gray-400 h-9 px-5 p-2 w-1/2 rounded-l-full" type="text" value={searchquery} onChange={(e)=>setsearchquery(e.target.value)}  onFocus={() => setShowSuggestions(true)}

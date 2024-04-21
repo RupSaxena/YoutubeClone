@@ -4,7 +4,7 @@ const Sidebar=()=>{
     const ismenuopen=useSelector((store)=>store.app.ismenuopen);
     if(!ismenuopen) return null;
     return (
-        <div className="shadow-lg px-6">
+        <div className="shadow-lg px-8">
 
             <ul className="hover:first:bg-gray-300">
                 <li>Home</li>

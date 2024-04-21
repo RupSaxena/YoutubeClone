@@ -20,7 +20,7 @@ const Watchpage=()=>{
     <div>
 <iframe
             width="1100"
-            height="600"
+            height="580"
             src={"https://www.youtube.com/embed/" + searchparams.get("v")}
             title="YouTube video player"
             frameBorder="0"
@@ -29,6 +29,9 @@ const Watchpage=()=>{
           ></iframe>
 </div>
 <div  className="w-full">
+   <div className="flex"><p className="font-bold">LIVECHAT</p>
+    <img alt="red" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaZk3oT89jzKou0awXqtdH7RUZ8ZjrLYswyw&s" width="28px"/>
+    </div>
     <Livechat/>
 </div>
 </div>

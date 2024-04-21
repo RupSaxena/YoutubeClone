@@ -5,7 +5,7 @@ import { addMessage } from "../utils/Chatslice";
 import { generateRandomName, makeRandomMessage } from "../utils/helper";
 const Livechat=()=>{
     const dispatch=useDispatch();
-    const messages=useSelector((store)=>store.chat.messages)
+    const chatmessages=useSelector((store)=>store.chat.messages)
     useEffect(()=>{
         const i=setInterval(()=>{
 dispatch(addMessage({name:generateRandomName(),message:makeRandomMessage(20)}))
@@ -13,9 +13,9 @@ dispatch(addMessage({name:generateRandomName(),message:makeRandomMessage(20)}))
 return ()=>clearInterval(i)
 },[])
     return (
-        <div className="w -full h-[600px] m-2 p-2 border border-black bg-slate-100 rounded-lg overflow-y-scroll flex flex-col-reverse">
+        <div className="w-full h-[550px] m-1 p-1 border border-black bg-slate-50 rounded-lg overflow-y-scroll flex flex-col-reverse">
             <div>
-            {messages.map((c,i)=>
+            {chatmessages.map((c,i)=>
             <Chatmessage key={i} name={c.name} message={c.message}/>)}</div></div>
     )
 }
