@@ -1,4 +1,5 @@
 import {useSelector } from 'react-redux';
+
 const Sidebar=()=>{
     const ismenuopen=useSelector((store)=>store.app.ismenuopen);
     if(!ismenuopen) return null;
@@ -6,7 +7,7 @@ const Sidebar=()=>{
         <div className="shadow-lg px-6">
 
             <ul className="hover:first:bg-gray-300">
-                <li >Home</li>
+                <li>Home</li>
             <li>Shorts</li>
             <li>Subscriptions</li>
             </ul>
