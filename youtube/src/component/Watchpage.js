@@ -4,6 +4,7 @@ import { closemenu } from "../utils/Appslice";
 import { useSearchParams } from "react-router-dom";
 
 import Commentscontainer from "./Commentsconrainer";
+import Livechat from "./Livechat";
 const Watchpage=()=>{
     const [searchparams]=useSearchParams();
 
@@ -14,8 +15,9 @@ const Watchpage=()=>{
     });
 
     return (
-        <div className="flex flex-col">
-<div class="px-5">
+        <div className="flex flex-col w-full">
+<div className="px-5 flex w-full">
+    <div>
 <iframe
             width="1100"
             height="600"
@@ -25,6 +27,10 @@ const Watchpage=()=>{
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
+</div>
+<div  className="w-full">
+    <Livechat/>
+</div>
 </div>
 <Commentscontainer/>
 </div>
